@@ -1,0 +1,143 @@
+/* General Page Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Page Container Style */
+.page {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+/* Login Page Styling */
+/* Login Page Styling */
+#loginContainer {
+    background-image: url('todolist.gif');
+    background-size: contain;
+    /* Adjust the size to be not too big, not too small */
+    background-repeat: no-repeat;
+    /* Prevent repeating of the image */
+    background-position: center;
+    /* Keep the image centered */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    border: 5px solid #161111;
+    border-radius: 23px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: red;
+}
+
+/* To-Do List Page Styling */
+#todoContainer {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.golden-title {
+    color: gold;
+}
+
+#taskInput {
+    padding: 20px;
+    width: 50%;
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+}
+
+li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li button {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+li button:hover {
+    background: #c82333;
+}
+
+#goodJobMessage,
+#incompleteMessage {
+    display: none;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#goodJobMessage {
+    color: green;
+}
+
+#incompleteMessage {
+    color: red;
+}
+
+/* To-Do List Header Image */
+.todo-header-image {
+    width: 250px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+/* Confetti */
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 999;
+}
